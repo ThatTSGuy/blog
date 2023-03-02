@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Gym Class Finance - {{ title }}</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <a href="/" class="logo">
+            <img src="/images/logo.svg" />
+        </a>
+        <div class="nav-bar hidden">
+            <a id="articles" class="nav-bar-link" href="/">Articles</a>
+            <a id="resources" class="nav-bar-link" href="/resources">Resources</a>
+            <a id="about" class="nav-bar-link" href="/about">About</a>
+        </div>
+        <button class="nav-dropdown-btn">
+            <i class="bi bi-list"></i>
+        </button>
+    </div>
+    <div class="scrollable">
+        <div class="content">
+            {{ content | safe }}
+        </div>
+        <div class="footer">
+            <a href="https://www.youtube.com/@gymclassfinance/" target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/gymclassfinance/" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@gymclassfinance/" target="_blank">
+                <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://www.pinterest.com/gymclassfinance/" target="_blank">
+                <i class="bi bi-pinterest"></i>
+            </a>
+            <a href="https://www.twitter.com/gymclassfinance/" target="_blank">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/gymclassfinance/" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

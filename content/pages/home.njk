@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Home
+permalink: /
+---
+
+<div class="header">
+  <div class="title">Gym Class Finance</div>
+  <div class="search-container">
+    <input class="search-input" placeholder="Search...">
+    <button class="search-btn">Search</button>
+  </div>
+</div>
+<div class="posts">
+  {% for post in collections.post %}
+    <a class="post" href="{{ post.url }}">
+      <img src="./images/{{ post.data.thumbnail }}">
+      <div>{{ post.data.title }}</div>
+    </a>
+  {% endfor %}
+</div>
+<script src="/scripts/search.js"></script>

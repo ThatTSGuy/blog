@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+layoutClass: post
+---
+
+<div class="reading-indicator"></div>
+<div class="article">
+    <h1>{{ title }}</h1>
+    <h5>{{ created }}</h5>
+    <img src="/../../images/{{ thumbnail }}"/>
+    {{ content | safe }}
+</div>
+<script src="/scripts/reading-indicator.js"></script>

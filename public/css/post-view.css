@@ -1,0 +1,40 @@
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-grow: 1;
+    padding: 3rem;
+
+    background-color: var(--background-primary);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow: hidden;
+    transition: box-shadow .2s;
+}
+
+.post:hover {
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 2px 8px;
+}
+
+.post > img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.post > div {
+    margin: 20px;
+
+    font-size: 18px;
+    text-transform: none;
+}
